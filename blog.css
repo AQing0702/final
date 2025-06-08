@@ -71,6 +71,11 @@ img{
   font-weight:bold;
   padding: 12px;
 }
+.menu a:hover{
+  color: blue;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
 .introduction{
   display: flex;
   align-items: center;
