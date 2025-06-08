@@ -1,0 +1,383 @@
+/* reset css */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* rwd img css，可當作是 CSS Reset 其中一個 */
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+* {
+  outline: 1px solid red;
+}*
+
+.container{
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: Noto Sans TC;
+}
+.menu{
+  display: flex;
+  justify-content: center;
+  padding: 24px 80px 24px 80px;
+}
+.menu a{
+  display: block;
+  font-size: 28px;
+  text-decoration: none;
+  color: black;
+  font-weight:bold;
+  padding: 12px;
+}
+.introduction{
+  display: flex;
+  align-items: center;
+}
+.introduction img{
+  width: 50%;
+}
+.introduction_text{
+  margin-left: -550px;
+  padding-left: 20px;
+}
+.introduction_text h1{
+  font-size: 120px;
+  font-weight: bold;
+  color: blue;
+  margin-bottom: 40px;
+}
+.introduction_text h2{
+  font-size: 28px;
+  font-weight: bold;
+  color: blue;
+}
+@media (max-width:992px){
+   .introduction{
+      flex-direction: column;
+   }
+   .introduction img{
+      width: 100%;
+   }
+   .introduction_text{
+    margin-left: 0px;
+    margin-top: -380px;
+    padding-bottom: 60px;
+   }
+   .introduction_text h1{
+    font-size: 52px;
+   }
+}
+.news_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #6C757D;
+  background: #fbfbfb;
+}
+.content_container{
+  max-width: 948px;
+}
+.news_content{
+  padding-left: 20px;
+  padding-right: 40px;
+}
+.news_container img{
+  max-width: 49%;
+}
+.news_content p{
+  max-width: 636px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.news_tag{
+  display: flex;
+  align-items: center;
+}
+.news_tag h3{
+  color: blue;
+  font-size: 24px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.news_tag p{
+  width: 80px;
+  border-radius: 40px;
+  background: blue;
+  color: #fff;
+  text-align: center;
+  padding: 6px 12px 6px 12px;
+  margin-bottom: 15px;
+}
+.news_content h2{
+  font-size: 28px;
+  font-weight:bold;
+  margin-bottom: 15px;
+}
+.news_content a{
+  border: 1px solid #000;
+  border-radius: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  padding: 8px 16px 8px 16px;
+}
+.news_btn{
+  margin-top: 30px;
+}
+@media (max-width:992px){
+  .news_container{
+    flex-direction: column;
+  }
+  .news_container img{
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .news_btn{
+    margin-bottom: 80px;
+  }
+}
+.blog_content{
+  border: 1px solid #000;
+  background: #FBFBFB;
+  padding: 80px 40px 80px 40px;
+}
+.search{
+  display: flex;
+  align-items: center;
+  max-width: 27%;
+  border: 1px solid #000;
+  border-radius: 60px;
+  padding: 16px 48px 16px 16px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+.search img{
+  padding-top: 5px;
+  padding-left: 10px;
+  max-width: 8%;
+}
+.search-input{
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: none;
+}
+.search-input::placeholder {
+    color: #4b4b4b; 
+}
+@media (max-width:992px){
+  .blog_content{
+    max-width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .search{
+    max-width: 50%;
+    margin-left: 0px;
+  }
+}
+@media (max-width:767px){
+  .search{
+    max-width: 100%;
+  }
+}
+.blog_content ul{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.blog_content li{
+  max-width: 31%;
+  line-height: 1.5;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.blog_content ul li img{
+  margin-bottom: 10px;
+}
+.blog_content .time{
+  margin-bottom: 10px;
+}
+.tag{
+  font-size: 24px;
+  color: blue;
+  margin-bottom: 10px;
+}
+.blog_content h2{
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.blog_content p{
+  margin-bottom: 30px;
+}
+.btn{
+  margin-bottom: 60px;
+}
+.btn a{
+  padding: 8px 16px 8px 16px;
+  color: #000;
+  text-decoration: none;
+  border: 1px solid #000;
+  border-radius: 40px;
+}
+.btn a:hover{
+  background: #000;
+  color: #fff;
+}
+.popular_tag{
+  display: flex;
+  margin-bottom: -20px;
+}
+.tag{
+  margin-right: 5px;
+}
+.popular{
+  background: blue;
+  border-radius: 40px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  padding: 6px 12px 6px 12px;
+}
+.text{
+  display: flex;
+  align-items: center;
+}
+.text p{
+  margin-top: 13px;
+  margin-bottom: 40px;
+}
+.null{
+  min-width: 31%;
+}
+@media (max-width:992px){
+  .blog_content li{
+    max-width: 48%;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .null{
+  min-width: 48%;
+}
+}
+@media (max-width:767px){
+  .blog_content ul{
+    flex-direction: column;
+  }
+  .blog_content li{
+    max-width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .blog_content ul li img{
+    width: 100%;
+  }
+}
+.page_menu{
+  display: flex;
+  justify-content: center;
+  padding: 8px 20px 8px 20px;
+  margin-bottom: 20px;
+}
+.page_menu a{
+  display: block;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  color: #4b4b4b;
+}
+.page_menu a:hover{
+  color: red;
+}
+.page_menu a:active{
+  color: blue;
+}
+.contact{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 80px 150px 80px 150px;
+   background: #fbfbfb;
+}
+.email p{
+   font-size: 32px;
+   font-weight: bold;
+}
+@media (max-width:992px){
+   .contact{
+      justify-content: center;
+      padding: 40px 150px 40px 150px;
+   }
+   .email{
+      margin-bottom: 30px;
+   }
+}
+@media (max-width:767px){
+   .contact{
+      width: 0;
+      height: 0;
+      padding: 0;
+   }
+   .email{
+      width: 0;
+   }
+   .email p{
+      font-size: 0;
+   }
+   .media{
+      width: 0;
+   }
+}
+.footer{
+   text-align: center;
+   padding-top: 24px;
+   padding-bottom: 24px;
+}
